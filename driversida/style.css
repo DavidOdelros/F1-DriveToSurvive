@@ -1,0 +1,471 @@
+/**/
+
+body {
+/*Samma typsnitt och bakgrundsfärg genom hela sidan.*/
+  background-color: black;
+  font-family: verdana;
+}
+
+
+.header {
+/*Styling för headern.*/
+  background-color: black;
+  padding: 5px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 4px solid red;
+  z-index: 10;
+}
+  .header a:not(.huvudlogo) {
+  /*Styling för texten på länkarna och olika "margin" och "padding" för att få det att se bra ut.*/
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  .netflix {
+  /*En speciell margin för Netflix-länken, då den ligger längst till höger så behövde den lite extra marginal till sidan av webbsidan.*/
+    margin-right: 40px !important;
+  }
+
+    /*↓↓De olika bakgrundsbilderna som dyker upp när man drar musen över länkarna, samt lite enskild styling för att få bilderna att passa så bra som möjligt.↓↓*/
+    .netflix:hover {
+      background-image: url(img/netflix-logo.jpeg);
+      color: transparent !important;
+      background-position: center -25px;
+      background-repeat: no-repeat;
+      background-size: 180px;
+    }
+    .imdb:hover {
+      background-image: url(img/imdb-logo.png);
+      color: transparent !important;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 110px;
+    }
+    .trailer:hover {
+      background-image: url(img/trailer-background.jpg);
+      color: transparent !important;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .drivers:hover {
+      background-image: url(img/f1-logo.png);
+      color: transparent !important;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+.container {
+/*Containern som innehåller det mesta.*/
+  background-attachment: fixed;
+  background-color: #000000;
+  border-bottom: 2px solid red;
+}
+/*Här har jag en border-bottom, för att separera de olika lagen, och för att inte få en extra för alla bilarna, så behövede jag exkludera dem med "not:".*/
+  .container div:not(.williams):not(.williamsx):not(.mclarencar):not(.alphatauricar):not(.alpinecar):not(.redbullcar):not(.ferraricar):not(.haascar):not(.astonmartincar):not(.alfaromeocar):not(.williamscar) {
+      border-bottom: 2px solid red;
+  }
+  .container div {
+    padding: 10px;
+  }
+
+
+/*↓↓Styling för de två rubrikerna The teams, The drivers, och även (click them for more info).↓↓*/
+  .menyrubrik1 h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 550;
+    font-size: 16px;
+    width: 100%;
+  }
+  .menyrubrik1-p p {
+    color: white;
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  .menyrubrik2 h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 550;
+    font-size: 16px;
+    width: 100%;
+  }
+  .menyrubrik2-p p {
+    color: white;
+    font-size: 12px;
+    margin-top: 25px;
+  }
+
+/*↓↓Från och med denna raden och 160 rader framåt, är stylingen för de olika bilarna, lagen, att bilarna ska lysas upp när man hovrar, bakgrundsbild på förarna när man hovrar, aa det är alldeles för mycket helt enkelt.↓↓*/
+
+/*McLaren styling*/
+    .mclarenx > a {
+      opacity: 0.6;
+      padding: 0;
+    }
+    .mclarenx > a:hover {
+      opacity: 1;
+      filter: brightness(150%);
+    }
+    .mclaren > a {
+      opacity: 0.8;
+    }
+    .mclaren > a:hover {
+      opacity: 1;
+      filter: brightness(130%);
+    }
+    .mclaren img:hover {
+      background-image: url(img/mclaren-back.jpeg);
+      background-position: center center;
+      background-size: cover;
+    }
+    .mclarencar img {
+      margin-top: -25px;
+      filter: contrast(1.2);
+      filter: brightness(120%);
+    }
+
+/*AlphaTauri styling*/
+    .alphataurix > a {
+      opacity: 0.6;
+    }
+    .alphataurix > a:hover {
+      opacity: 1;
+      filter: brightness(150%);
+    }
+    .alphatauri > a {
+      opacity: 0.8;
+    }
+    .alphatauri > a:hover {
+      opacity: 1;
+      filter: brightness(130%);
+    }
+    .alphatauri img:hover {
+      background-image: url(img/alphatauri-back.jpeg);
+      background-position: center center;
+      background-size: cover;
+    }
+    .alphatauricar img {
+      margin-top: -25px;
+      filter: contrast(1);
+      filter: brightness(130%);
+    }
+
+/*Alpine styling*/
+    .alpinex > a {
+      opacity: 0.6;
+    }
+    .alpinex > a:hover {
+      opacity: 1;
+      filter: brightness(150%);
+    }
+    .alpine > a {
+      opacity: 0.8;
+    }
+    .alpine > a:hover {
+      opacity: 1;
+      filter: brightness(130%);
+    }
+    .alpine img:hover {
+      background-image: url(img/alpine-back.png);
+      background-position: center center;
+      background-size: cover;
+    }
+    .alpinecar img {
+      margin-top: -25px;
+      filter: contrast(1.2);
+      filter: brightness(90%);
+    }
+
+/*RedBull styling*/
+    .redbullx > a {
+      opacity: 0.6;
+    }
+    .redbullx > a:hover {
+      opacity: 1;
+      filter: brightness(150%);
+    }
+    .redbull > a {
+      opacity: 0.8;
+    }
+    .redbull > a:hover {
+      opacity: 1;
+      filter: brightness(130%);
+    }
+    .redbull img:hover {
+      background-image: url(img/redbull-back.jpeg);
+      background-position: center center;
+      background-size: cover;
+    }
+    .redbullcar img {
+      margin-top: -25px;
+      filter: contrast(1.4);
+      filter: brightness(130%);
+    }
+
+/*Ferrari styling*/
+    .ferrarix > a {
+      opacity: 0.6;
+    }
+    .ferrarix > a:hover {
+      opacity: 1;
+      filter: brightness(150%);
+    }
+    .ferrari > a {
+      opacity: 0.8;
+    }
+    .ferrari > a:hover {
+      opacity: 1;
+      filter: brightness(130%);
+    }
+    .ferrari img:hover {
+      background-image: url(img/ferrari-back.png);
+      background-position: center center;
+      background-size: cover;
+    }
+    .ferraricar img {
+      margin-top: -25px;
+      filter: contrast(1.2);
+      filter: brightness(120%);
+    }
+
+/*Mercedes styling*/
+    .mercedesx > a {
+      opacity: 0.6;
+    }
+    .mercedesx > a:hover {
+      opacity: 1;
+      filter: brightness(150%);
+    }
+    .mercedes > a {
+      opacity: 0.8;
+    }
+    .mercedes > a:hover {
+      opacity: 1;
+      filter: brightness(130%);
+    }
+    .mercedes img:hover {
+      background-image: url(img/mercedes-back.png);
+      background-position: center center;
+      background-size: cover;
+    }
+    .mercedescar img {
+      margin-top: -28px;
+      filter: contrast(1.2);
+      filter: brightness(120%);
+    }
+
+/*Haas styling*/
+    .haasx > a {
+      opacity: 0.6;
+    }
+    .haasx > a:hover {
+      opacity: 1;
+      filter: brightness(150%);
+    }
+    .haas > a {
+      opacity: 0.8;
+    }
+    .haas > a:hover {
+      opacity: 1;
+      filter: brightness(130%);
+    }
+    .haas img:hover {
+      background-image: url(img/haas-back.jpeg);
+      background-position: center center;
+      background-size: cover;
+    }
+    .haascar img {
+      margin-top: -25px;
+      filter: contrast(1.2);
+      filter: brightness(120%);
+    }
+
+/*Aston Martin styling*/
+    .astonmartinx > a {
+      opacity: 0.6;
+    }
+    .astonmartinx > a:hover {
+      opacity: 1;
+      filter: brightness(140%);
+    }
+    .astonmartin > a {
+      opacity: 0.8;
+    }
+    .astonmartin > a:hover {
+      opacity: 1;
+      filter: brightness(130%);
+    }
+    .astonmartin img:hover {
+      background-image: url(img/astonmartin-back.jpeg);
+      background-position: center center;
+      background-size: cover;
+    }
+    .astonmartincar img {
+      margin-top: -25px;
+      filter: contrast(1.2);
+      filter: brightness(120%);
+    }
+
+/*Alfa Romeo styling*/
+    .alfaromeox > a {
+      opacity: 0.6;
+    }
+    .alfaromeox > a:hover {
+      opacity: 1;
+      filter: brightness(180%);
+    }
+    .alfaromeo > a {
+      opacity: 0.8;
+    }
+    .alfaromeo > a:hover {
+      opacity: 1;
+      filter: brightness(130%);
+    }
+    .alfaromeo img:hover {
+      background-image: url(img/alfaromeo-back.jpeg);
+      background-position: center center;
+      background-size: cover;
+    }
+    .alfaromeocar img {
+      margin-top: -30px;
+      filter: contrast(1.2);
+      filter: brightness(120%);
+    }
+
+/*Williams styling*/
+    .williamsx > a {
+      opacity: 0.6;
+    }
+    .williamsx > a:hover {
+      opacity: 1;
+      filter: brightness(150%);
+    }
+    .williams > a {
+      opacity: 0.8;
+    }
+    .williams > a:hover {
+      opacity: 1;
+      filter: brightness(130%);
+    }
+    .williams img:hover {
+      background-image: url(img/williams-back.jpeg);
+      background-position: center center;
+      background-size: cover;
+    }
+    .williamscar img {
+      margin-top: -25px;
+      filter: contrast(1.4);
+      filter: brightness(130%);
+    }
+
+
+.container2 {
+/*Bakgrundsbilden näst längst ner på sidan.*/
+  background-image: url(img/background.jpeg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000;
+}
+
+
+.footer {
+/*Styling för footern.*/
+  background-color: #000000;
+  border: 5px dashed red;
+}
+
+  /*↓↓Styling för "Contact"-stycket.↓↓*/
+  .contact {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+    .contactrubrik h3 {
+      font-size: 21px;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+    }
+    .contact a {
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+    .contact a:hover{
+      border-bottom: 2.5px solid red;
+    }
+
+  .home {
+  /*↓↓Styling för "Home"-stycket.↓↓*/
+    text-align: center;
+    margin-top: 5px;
+  }
+    .home a {
+      color: white;
+      text-decoration: none;
+      font-size: 21px;
+      font-weight: bold;
+    }
+    .home a:hover{
+      border-bottom: 2.5px solid red;
+    }
+
+  .förare {
+  /*↓↓Styling för "Driver"-stycket.↓↓*/
+    text-align: center;
+    margin-top: 5px;
+  }
+    .förare a {
+      color: white;
+      text-decoration: none;
+      font-size: 21px;
+      font-weight: bold;
+    }
+    .förare a:hover{
+      border-bottom: 2.5px solid red;
+    }
+
+  .lagrubrik h3 {
+  /*Styling för "Teams"-stycket.*/
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+  }
+      /*↓↓Styling de 2 olika styckena under "Teams"-rubriken.↓↓*/
+      .lag1 {
+        text-align: center;
+        margin-top: 5px;
+      }
+      .lag2 {
+        text-align: center;
+        margin-top: 5px;
+      }
+      .lag1 a {
+        color: white;
+        text-decoration: none;
+      }
+      .lag2 a {
+        color: white;
+        text-decoration: none;
+      }
+      .lag1 a:hover {
+        border-bottom: 2.5px solid red;
+      }
+      .lag2 a:hover {
+        border-bottom: 2.5px solid red;
+      }

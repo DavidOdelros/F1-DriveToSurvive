@@ -1,0 +1,118 @@
+/**/
+
+.header {
+/*Här är container-upplägget för headern*/
+  display: grid;
+  grid-template-columns: repeat(6, 1fr) auto auto auto;
+}
+
+  /*↓↓Här är placeringen av varje enskilt objekt i headern↓↓*/
+  .imdb {
+    grid-column: -3/-2;
+  }
+  .netflix {
+    grid-column: -2/-1;
+  }
+  .trailer {
+    grid-column: -4/-3;
+  }
+  .drivers {
+    grid-column: -5/-4;
+  }
+
+
+.container {
+/*Här är en av bakgrundsbilderna, rows-en finns där endast för det flexibla i att bara ändra en siffra och så har du 75px mindre, en flexibel summa.*/
+  display: grid;
+  grid-template-rows: repeat(9, 75px);
+}
+
+
+.container2 {
+/*Här är den informativa container2, där man lär sig mer om serien, den vänstra kolumnen är 500px, för att därmed ge plats åt bilden.*/
+  display: grid;
+  grid-template-columns: 500px 1fr 100px;
+  grid-template-rows: auto;
+}
+  .info {
+  /*Här har jag placerat in texten i kolumnen till höger om bilden.*/
+    grid-row: 1/auto;
+    grid-column: 2/3
+  }
+
+
+.container3 {
+/*Återigen, bara en container för bakgrundsbilden.*/
+  display: grid;
+  grid-template-rows: repeat(5, 75px);
+}
+
+
+.container4 {
+/*Här har vi containern med text om varje säsong. Jag har valt att skapa en kolumn på varje sida för att skapa utrymme på sidorna, då detta ser klart bättre ut.*/
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: 100px 1fr 100px;
+}
+/*↓↓Här har vi de olika styckena, som alla har fått vars en rad, som bestäms av "auto", vilket gör att de kan vara hur långa som helst, men raden "hänger med".↓↓*/
+  .stycke1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .stycke2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .stycke3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .stycke4 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+
+.container5 {
+/*Denna container innehåller den sista bakgrundsbilden, näst längst ner på sidan.*/
+  display: grid;
+  grid-template-rows: repeat(6, 75px);
+}
+
+
+.footer {
+/*Footern består av 4 rader, den första och sista för att skapa utrymme i botten och toppen. Även av 8 kolumner, för att öka flexibiliteten och få plats med de olika listorna.*/
+  display: grid;
+  grid-template-rows: 15px auto auto 30px;
+  grid-template-columns: repeat(8, 1fr)
+}
+  /*↓↓Placering av de olika styckena i min footer.↓↓*/
+  .contact {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .contactrubrik {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .home {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  .förare {
+    grid-column: 5/7;
+    grid-row: 2/3;
+  }
+  .lagrubrik {
+    grid-column: 7/9;
+    grid-row: 2/3;
+  }
+    /*↓↓De olika lagen fick vars en kolumn, och jag delade därmed upp dem i två spalter.↓↓*/
+    .lag1 {
+      grid-column: 7/8;
+      grid-row: 3/4;
+    }
+    .lag2 {
+      grid-column: 8/9;
+      grid-row: 3/4
+    }
