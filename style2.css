@@ -71,7 +71,7 @@ body {
   border-bottom: 2px solid red;
 }
 /*Här har jag en border-bottom, för att separera de olika lagen, och för att inte få en extra för alla bilarna, så behövede jag exkludera dem med "not:".*/
-  .container div:not(.williams):not(.williamsx):not(.mclarencar):not(.alphatauricar):not(.alpinecar):not(.redbullcar):not(.ferraricar):not(.haascar):not(.astonmartincar):not(.alfaromeocar):not(.williamscar) {
+  .container div:not(.williams):not(.williamsx):not(.mclarencar):not(.alphatauricar):not(.alpinecar):not(.redbullcar):not(.ferraricar):not(.haascar):not(.astonmartincar):not(.alfaromeocar):not(.williamscar):not(.mercedescar) {
       border-bottom: 2px solid red;
   }
   .container div {
