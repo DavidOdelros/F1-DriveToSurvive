@@ -35,28 +35,28 @@ body {
 
     /*↓↓De olika bakgrundsbilderna som dyker upp när man drar musen över länkarna, samt lite enskild styling för att få bilderna att passa så bra som möjligt.↓↓*/
     .netflix:hover {
-      background-image: url(img/netflix-logo.jpeg);
+      background-image: url(img3/netflix-logo.jpeg);
       color: transparent !important;
       background-position: center -25px;
       background-repeat: no-repeat;
       background-size: 180px;
     }
     .imdb:hover {
-      background-image: url(img/imdb-logo.png);
+      background-image: url(img3/imdb-logo.png);
       color: transparent !important;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: 110px;
     }
     .trailer:hover {
-      background-image: url(img/trailer-background.jpg);
+      background-image: url(img3/trailer-background.jpg);
       color: transparent !important;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
     }
     .drivers:hover {
-      background-image: url(img/f1-logo.png);
+      background-image: url(img3/f1-logo.png);
       color: transparent !important;
       background-position: center center;
       background-repeat: no-repeat;

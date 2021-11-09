@@ -35,28 +35,28 @@ body {
 
     /*↓↓De olika bakgrundsbilderna som dyker upp när man drar musen över länkarna, samt lite enskild styling för att få bilderna att passa så bra som möjligt.↓↓*/
     .netflix:hover {
-      background-image: url(img/netflix-logo.jpeg);
+      background-image: url(img2/netflix-logo.jpeg);
       color: transparent !important;
       background-position: center -25px;
       background-repeat: no-repeat;
       background-size: 180px;
     }
     .imdb:hover {
-      background-image: url(img/imdb-logo.png);
+      background-image: url(img2/imdb-logo.png);
       color: transparent !important;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: 110px;
     }
     .trailer:hover {
-      background-image: url(img/trailer-background.jpg);
+      background-image: url(img2/trailer-background.jpg);
       color: transparent !important;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
     }
     .drivers:hover {
-      background-image: url(img/f1-logo.png);
+      background-image: url(img2/f1-logo.png);
       color: transparent !important;
       background-position: center center;
       background-repeat: no-repeat;
@@ -126,7 +126,7 @@ body {
       filter: brightness(130%);
     }
     .mclaren img:hover {
-      background-image: url(img/mclaren-back.jpeg);
+      background-image: url(img2/mclaren-back.jpeg);
       background-position: center center;
       background-size: cover;
     }
@@ -152,7 +152,7 @@ body {
       filter: brightness(130%);
     }
     .alphatauri img:hover {
-      background-image: url(img/alphatauri-back.jpeg);
+      background-image: url(img2/alphatauri-back.jpeg);
       background-position: center center;
       background-size: cover;
     }
@@ -178,7 +178,7 @@ body {
       filter: brightness(130%);
     }
     .alpine img:hover {
-      background-image: url(img/alpine-back.png);
+      background-image: url(img2/alpine-back.png);
       background-position: center center;
       background-size: cover;
     }
@@ -204,7 +204,7 @@ body {
       filter: brightness(130%);
     }
     .redbull img:hover {
-      background-image: url(img/redbull-back.jpeg);
+      background-image: url(img2/redbull-back.jpeg);
       background-position: center center;
       background-size: cover;
     }
@@ -230,7 +230,7 @@ body {
       filter: brightness(130%);
     }
     .ferrari img:hover {
-      background-image: url(img/ferrari-back.png);
+      background-image: url(img2/ferrari-back.png);
       background-position: center center;
       background-size: cover;
     }
@@ -256,7 +256,7 @@ body {
       filter: brightness(130%);
     }
     .mercedes img:hover {
-      background-image: url(img/mercedes-back.png);
+      background-image: url(img2/mercedes-back.png);
       background-position: center center;
       background-size: cover;
     }
@@ -282,7 +282,7 @@ body {
       filter: brightness(130%);
     }
     .haas img:hover {
-      background-image: url(img/haas-back.jpeg);
+      background-image: url(img2/haas-back.jpeg);
       background-position: center center;
       background-size: cover;
     }
@@ -308,7 +308,7 @@ body {
       filter: brightness(130%);
     }
     .astonmartin img:hover {
-      background-image: url(img/astonmartin-back.jpeg);
+      background-image: url(img2/astonmartin-back.jpeg);
       background-position: center center;
       background-size: cover;
     }
@@ -334,7 +334,7 @@ body {
       filter: brightness(130%);
     }
     .alfaromeo img:hover {
-      background-image: url(img/alfaromeo-back.jpeg);
+      background-image: url(img2/alfaromeo-back.jpeg);
       background-position: center center;
       background-size: cover;
     }
@@ -360,7 +360,7 @@ body {
       filter: brightness(130%);
     }
     .williams img:hover {
-      background-image: url(img/williams-back.jpeg);
+      background-image: url(img2/williams-back.jpeg);
       background-position: center center;
       background-size: cover;
     }
@@ -373,7 +373,7 @@ body {
 
 .container2 {
 /*Bakgrundsbilden näst längst ner på sidan.*/
-  background-image: url(img/background.jpeg);
+  background-image: url(img2/background.jpeg);
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
