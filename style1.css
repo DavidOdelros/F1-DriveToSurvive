@@ -128,10 +128,6 @@ body {
     text-decoration: 2.5px underline;
   }
 
-  ul {
-    list-style: none;
-  }
-
   ul li {
     color: white;
   }
