@@ -132,9 +132,8 @@ body {
     list-style: none;
   }
 
-  ul li::before {
+  ul li {
     color: white;
-    font-weight: bold;
   }
 
 
