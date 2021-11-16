@@ -97,6 +97,11 @@ body {
     color: white;
     padding-top: 15px;
   }
+  @media only screen and (max-width: 500px) {
+  .infobild {
+      display: none;
+    }
+  }
 
 
 .container3 {
@@ -108,7 +113,6 @@ body {
   background-size: cover;
   background-color: #000000;
 }
-
 
 .container4 {
 /*Styling samt border för det informativa stycket om säsongerna.*/
