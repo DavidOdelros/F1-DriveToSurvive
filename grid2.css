@@ -24,7 +24,7 @@
 .container {
 /*Grid-systemet för den containern som täcker i princip hela sidan, den med förarna, en spalt till vänster med logotypen och bilen, och två till höger med förarna.*/
   display: grid;
-  grid-template-columns: 550px 200px 200px 1fr;
+  grid-template-columns: 550px 170px 170px;
   grid-template-rows: 100px auto repeat(10, 200px);
 }
 

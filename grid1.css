@@ -31,7 +31,7 @@
 .container2 {
 /*Här är den informativa container2, där man lär sig mer om serien, den vänstra kolumnen är 500px, för att därmed ge plats åt bilden.*/
   display: grid;
-  grid-template-columns: 500px 1fr 100px;
+  grid-template-columns: 2fr 2fr 1fr;
   grid-template-rows: auto;
 }
   .info {
@@ -52,7 +52,7 @@
 /*Här har vi containern med text om varje säsong. Jag har valt att skapa en kolumn på varje sida för att skapa utrymme på sidorna, då detta ser klart bättre ut.*/
   display: grid;
   grid-template-rows: repeat(4, auto);
-  grid-template-columns: 100px 1fr 100px;
+  grid-template-columns: 1fr 5fr 1fr;
 }
 /*↓↓Här har vi de olika styckena, som alla har fått vars en rad, som bestäms av "auto", vilket gör att de kan vara hur långa som helst, men raden "hänger med".↓↓*/
   .stycke1{
