@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style1.css">
   <link rel="stylesheet" type="text/css" href="grid1.css">
+  <script src="script.js"></script>
 <!--Raden under denna så är bilden som ändrar "the icon". Alltså det emblemet som sitter uppe på fliken.-->
   <link rel="shortcut icon" type="image/x-icon" href="img1/f1-logo.png"/>
 </head>
@@ -83,8 +84,54 @@
   </div>
 
 
-  <div class="container5">
-<!--Denna container är, som andra, bara för att få till en bakgrundsbild i scrollningen.-->
+  <!--Containern med bildspel-->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="img1/slideshow1.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="img1/slideshow2.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="img1/slideshow3.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="img1/slideshow4.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="img1/slideshow5.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="img1/slideshow6.jpeg" style="width:100%">
+      <div class="text">The areodynamics of an F1 car</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
   </div>
 
 
@@ -136,5 +183,9 @@
 
   </div>
 
+  <script>
+    showSlides(slideIndex);
+  </script>
+  
 </body>
 </html>
